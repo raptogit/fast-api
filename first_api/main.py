@@ -1,10 +1,10 @@
 from fastapi import FastAPI
-new=FastAPI()
+app=FastAPI()
 
-@new.get("/")
+@app.get("/")
 async def root():
     return {"message":"Hello World from fastAPI"}
 
-@new.get("/newpage")
+@app.get("/newpage")
 async def root():
     return {"message":"New page created !"}
